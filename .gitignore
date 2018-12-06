@@ -21,3 +21,12 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# settings
+.setting/
+bin/
+.idea/
+.vscode/
+.env
+package-lock.json
+.DS_Store
