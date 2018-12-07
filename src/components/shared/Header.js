@@ -1,11 +1,14 @@
 import React from 'react';
 
-class Header extends React.Component {
-  constructor(props) {
-    super(props);
+class Header extends React.Component<{}> {
+  constructor() {
+    super();
   }
 
+  onClickNotification = (event: SyntheticEvent<HTMLButtonElement>) => {
+    event.preventDefault();
 
+  }
 
   render() {
     return (
@@ -30,7 +33,7 @@ class Header extends React.Component {
               </div>
             </div>
           </div>
-          <div className="item"><i className="bell icon"/></div>
+          <div className="item" onClick={this.onClickNotification.bind(this)}><i className="bell icon"/></div>
           <div className="item">
             <div className="ui icon pointing dropdown">
               <i className="wrench icon"/>

@@ -1,1 +1,19 @@
-yarn add --dev flow-bin
+[ignore]
+.*/__tests__/.*
+.*/node_modules/.*
+.*/build/.*
+.*/config/.*
+.*/devserver/.*
+.*/public/.*
+.*/src/\index\.js
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+all=true
+
+[strict]
